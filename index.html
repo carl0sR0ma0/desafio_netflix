@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/main.css">
+
+  <!-- Responsividade -->
+  <link rel="stylesheet" href="style/responsive.css">
+
+  <!-- OWL CSS  -->
+  <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+  <title>NETFLIX CLONE</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h2 class="logo">NETFLIX</h2>
+      <nav>
+        <a href="#">Início</a>
+        <a href="#">Séries</a>
+        <a href="#">Filmes</a>
+        <a href="#">Documentário</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="filme-principal">
+      <div class="container">
+        <h3 class="titulo">HOUSE OF CARDS</h3>
+        <p class="descricao">O Presidente da Câmara da Maioria, Francis Underwood, leva você a uma longa jornada
+          enquanto exige sua vingança contra aqueles que ele sente que o injustiçaram - isto é, os membros de seu
+          próprio gabinete, incluindo o próprio Presidente dos Estados Unidos.
+        </p>
+        <div class="botoes">
+          <button role="button" class="botao" onclick="openModal('dv-modal')">
+            <i class="fas fa-play"></i>ASSISTIR AGORA
+          </button>
+
+          <button role="button" class="botao" onclick="openModal('dv-modal-info')">
+            <i class="fas fa-info-circle"></i>MAIS INFORMAÇÕES
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="dv-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1>HOUSE OF CARDS</h1>
+          <div class="modal-footer">
+            <span class="btn" onclick="closeModal('dv-modal')"><i class="far fa-times-circle"></i></span>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <div class="trailer">
+            <iframe src="https://www.youtube.com/embed/mpVD25j-LCo" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="dv-modal-info" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1>HOUSE OF CARDS</h1>
+          <div class="modal-footer">
+            <span class="btn" onclick="closeModal('dv-modal-info')"><i class="far fa-times-circle"></i></span>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <h4>Sinopse:</h4>
+          <p>O Presidente da Câmara da Maioria, Francis Underwood, leva você a uma longa jornada
+            enquanto exige sua vingança contra aqueles que ele sente que o injustiçaram - isto é, os membros de seu
+            próprio gabinete, incluindo o próprio Presidente dos Estados Unidos. Arrojado, astuto, metódico e vicioso,
+            Frank Underwood, juntamente com sua esposa igualmente manipuladora, mas ambígua, Claire, tomam Washington de
+            assalto ao subir a escada hierárquica ao poder nesta recriação americanizada da série da BBC de mesmo nome.
+          </p>
+          <h4>Ano de Lançamento:</h4>
+          <span>2018</span>
+          <h4>Duração:</h4>
+          <span>6 temporadas</span>
+          <h4>Recomendação:</h4>
+          <span>+18</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="carrosel-filmes">
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img class="box-filme" src="img/mini1.jpg" alt="imagem-filme/serie_1"></div>
+      <div class="item"><img class="box-filme" src="img/mini2.jpg" alt="imagem-filme/serie_1"></div>
+      <div class="item"><img class="box-filme" src="img/mini3.jpg" alt="imagem-filme/serie_1"></div>
+      <div class="item"><img class="box-filme" src="img/mini4.jpg" alt="imagem-filme/serie_1"></div>
+      <div class="item"><img class="box-filme" src="img/mini5.jpg" alt="imagem-filme/serie_1"></div>
+      <div class="item"><img class="box-filme" src="img/mini6.jpg" alt="imagem-filme/serie_1"></div>
+      <div class="item"><img class="box-filme" src="img/mini7.jpg" alt="imagem-filme/serie_1"></div>
+      <div class="item"><img class="box-filme" src="img/mini8.jpg" alt="imagem-filme/serie_1"></div>
+      <div class="item"><img class="box-filme" src="img/mini9.jpg" alt="imagem-filme/serie_1"></div>
+      <div class="item"><img class="box-filme" src="img/mini10.jpg" alt="imagem-filme/serie_1"></div>
+    </div>
+  </div>
+
+  <footer></footer>
+
+  <script src="https://kit.fontawesome.com/3060984b4d.js" crossorigin="anonymous"></script>
+  <script src="js/owl/jquery.min.js"></script>
+  <script src="js/owl/owl.carousel.min.js"></script>
+  <script src="js/setup.js"></script>
+
+</body>
+
+</html>
